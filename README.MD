@@ -384,17 +384,18 @@ If there is any problem about pg database. Try the steps below:
 
 ## How to Deploy 
 
-1. heroku create -a [appname]
-2. heroku config:set AWS_ACCESS_KEY=AKIAV5IDIKICCNPVFZ3U
-3. heroku config:set AWS_BUCKET=nxtfolio-s3 
-4. heroku config:set AWS_REGION=us-west-2
-5. heroku config:set AWS_SECRET_KEY=/q8xUNLrsVtMOmE+h2UsyKjjJyQA04PcIQcz+f22
-6. heroku addons:create heroku-postgresql:essential-2
-7. git push heroku master
-8. heroku run rails db:migrate
-9. heroku run rails db:seed
-
-After completing these steps, go to the "config/application.yml" file and set the domain_url to your app's domain URL.
+1. git clone https://github.com/omarkhater-school/NXTFolio.git
+2. cd to the cloned repo and do "heroku login"
+3. heroku create -a [appname]
+4. go to "config/application.yml" file and set the domain_url to your app's domain URL.
+5. heroku config:set AWS_ACCESS_KEY=AKIAV5IDIKICCNPVFZ3U
+6. heroku config:set AWS_BUCKET=nxtfolio-s3 
+7. heroku config:set AWS_REGION=us-west-2
+8. heroku config:set AWS_SECRET_KEY=/q8xUNLrsVtMOmE+h2UsyKjjJyQA04PcIQcz+f22
+9. heroku addons:create heroku-postgresql:essential-2
+10. git push heroku master
+11. heroku run rails db:migrate
+12. heroku run rails db:seed
 
 ## Using AWS S3 as Image Backend
 
