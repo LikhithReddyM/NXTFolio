@@ -393,6 +393,7 @@ If there is any problem about pg database. Try the steps below:
 7. git push heroku master
 8. heroku run rails db:migrate
 9. heroku run rails db:seed
+
 After completing these steps, go to the "config/application.yml" file and set the domain_url to your app's domain URL.
 
 ## Using AWS S3 as Image Backend
