@@ -384,7 +384,7 @@ If there is any problem about pg database. Try the steps below:
 
 ## How to Deploy 
 
-1. git clone https://github.com/omarkhater-school/NXTFolio.git
+1. git clone https://github.com/omarkhater-school/NXTFolio.git --config core.autocrlf=input
 2. cd to the cloned repo and do "heroku login"
 3. heroku create -a [appname]
 4. go to "config/application.yml" file and set the domain_url to your app's domain URL.
